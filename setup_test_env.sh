@@ -71,12 +71,13 @@ if [ -f "examples/profiles_identity.json" ]; then
     echo "✓ Copied example profiles_identity.json"
 fi
 
+# Copy hello file from repository-specific location or create a default one
 if [ -f "git_task/hello world" ]; then
     cp "git_task/hello world" /tmp/app/
-    echo "✓ Copied hello world file"
+    echo "✓ Copied hello world file from git_task directory"
 elif [ ! -f "/tmp/app/hello.txt" ]; then
     echo "hello world" > /tmp/app/hello.txt
-    echo "✓ Created hello.txt"
+    echo "✓ Created default hello.txt"
 fi
 
 echo

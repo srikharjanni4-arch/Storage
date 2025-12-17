@@ -102,10 +102,12 @@ def test_authentication_method(runner):
 
 def test_hello_txt_content():
     """Test 3: Verify hello.txt content"""
+    # Check common locations for the hello file
+    # Note: Adjust these paths based on your deployment structure
     possible_paths = [
-        Path('/app/hello world'),
-        Path('/app/hello.txt'),
-        Path('/app/git_task/hello world')
+        Path('/app/hello world'),  # Original repository structure
+        Path('/app/hello.txt'),     # Standard naming
+        Path('/app/git_task/hello world')  # Legacy path (repository-specific)
     ]
     
     found = False

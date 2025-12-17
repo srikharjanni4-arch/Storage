@@ -48,14 +48,14 @@ echo
 echo "Test 3: Verifying hello.txt content..."
 if [ -f "/app/hello world" ]; then
     HELLO_CONTENT=$(cat "/app/hello world")
-    echo "✓ hello.txt (hello world) found with content:"
+    echo "✓ File '/app/hello world' found with content:"
     echo "  $HELLO_CONTENT"
 elif [ -f "/app/hello.txt" ]; then
     HELLO_CONTENT=$(cat "/app/hello.txt")
-    echo "✓ hello.txt found with content:"
+    echo "✓ File '/app/hello.txt' found with content:"
     echo "  $HELLO_CONTENT"
 else
-    echo "✗ FAIL: hello.txt not found"
+    echo "✗ FAIL: hello.txt not found at expected paths"
     exit 1
 fi
 echo

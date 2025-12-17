@@ -42,7 +42,12 @@ jobs:
       run: |
         mkdir -p /tmp/app/output
         cp examples/profiles_identity.json /tmp/app/output/
-        cp "git_task/hello world" /tmp/app/ || echo "hello world" > /tmp/app/hello.txt
+        # Copy hello world file from git_task if it exists (repository-specific)
+        if [ -f "git_task/hello world" ]; then
+          cp "git_task/hello world" /tmp/app/
+        else
+          echo "hello world" > /tmp/app/hello.txt
+        fi
     
     - name: Run Python tests (dry-run)
       run: |
