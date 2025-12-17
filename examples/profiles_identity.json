@@ -1,0 +1,18 @@
+{
+  "profile1": {
+    "ProfileName": "profile1",
+    "Account": "123456789012",
+    "AccountId": "123456789012",
+    "RoleName": "AdminRole",
+    "Role": "AdminRole",
+    "Region": "us-east-1"
+  },
+  "profile2": {
+    "ProfileName": "profile2",
+    "Account": "987654321098",
+    "AccountId": "987654321098",
+    "RoleName": "DeveloperRole",
+    "Role": "DeveloperRole",
+    "Region": "us-west-2"
+  }
+}
