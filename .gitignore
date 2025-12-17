@@ -28,6 +28,3 @@ Thumbs.db
 # Test outputs
 test_results/
 *.log
-
-# Docker
-.dockerignore
